@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding: 50px 0px;
 }
 
 .canvas {
@@ -36,6 +36,22 @@ body {
 .controls__btns button {
     all: unset;
     cursor: pointer;
+    background-color: white;
+    padding: 5px 20px;
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border:2px solid rgba(0, 0, 0, 0.2);
+    color:  rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+
+}
+
+.controls__btns button:active{
+    transform: scale(0.97);
 }
 
 .controls__colors .controls__color {
@@ -52,9 +68,17 @@ body {
 .controls .controls__colors {
     display: flex;
   }
-/* .controls .controls__range {
+
+.controls .controls__colors .controls__color:active{
+    transform: scale(0.97);
+    /* 클릭할때 백그라운드를 회색으로 살짝 보이게하려했는데 실패 */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    
+}
+.controls .controls__range {
     margin-bottom: 30px;
-  } */
+    /* width: 50px; */
+  }
 
   
   
