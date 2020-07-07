@@ -62,7 +62,7 @@ function loadTodos(){
         console.log(loadedToDos);
         const parsedToDos = JSON.parse(loadedToDos);
         console.log(parsedToDos);
-    parsedToDos.forEach(element => {
+        parsedToDos.forEach(element => {
         paintToDo(element.text);        
     });
     }

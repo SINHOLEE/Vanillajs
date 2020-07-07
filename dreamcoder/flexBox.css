@@ -1,0 +1,100 @@
+.container {
+  background: beige;
+  height:100vh;
+  /* 플랙스박스로 만들고 싶다면 */
+  display: flex;
+  /* main-aix 는 row라면 수평축이다*/
+  /* row(왼쪽에서 오른쪽), row-reverse(오른쪽에서 왼쪽) */
+  /* 수직축으로 바꾸고 싶다면, column으로 설정하면 된다.*/  
+  /* flex-direction: row; */
+  /* flex-wrap의 기본값은 nowrap으로, 디스플레이의 변화가 
+  해당 row혹은 column의 영향을 주지 않고 사이즈를 바꾼다.
+  wrap으로 설정하면 반응형 처럼 아이템이 바뀐다 
+  궁금증 -> 바로 밑에 안붙고 왜 한참 밑에 붙냐*/
+  /* flex-wrap: wrap; */
+  /*   한번에 표현할 수 있음 flex-flow로 */
+  /* flex-flow: column nowrap; */
+  /* justify-content는 중심축 기준으로 배열 설정
+  배열의 정렬(?이라기 보단 위치 지정)위치 설정
+  보통 좌로정렬 우로정렬 중앙정렬 세가지 옵션이 있다
+  flex-start , flex-end, center 
+  추가적으로 space-evenly, space-around, space-between라는 속성이 있다. 각각
+  space-evenly) 모든 item이 동일한 간격으로 떨어져 있게 배렬
+  space-around) 각각의 item마다 좌우의 빈공간이 똑같게 할당받아 간격을 유지하도록 배열 
+  space-between) 왼쪽, 오른쪽 끝의 간격은 제거하고, 나머지 사이의 공간을 일정하게 유지
+  */
+  /* justify-content: space-evenly; */
+  /* align-items 반대축을 기준으로 속성값을 설정 */
+  /* align-items: center; */
+  /* align-content: center; */
+  /* 여기까지가 container css*/
+}
+
+.item{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  /* text-align:center; */
+}
+
+.item1 {
+  background: #ef9a9a;
+  /* 해당 속성 flex-grow을 가지고 있는 아이템만 쭉쭉 늘어나도록 한다.
+  이때 숫자는 비율을 뜻한다.
+  기본값은 0이다
+  flex-shink는 반대로 줄어들 때 비율을 정하는 것*/
+  /* flex-grow:1; */
+  /* flex-shrink: 3; */
+  /* flex-basis는 width의 몇퍼센트를 차지할지 정하는 속성
+  이때 100%를 기준으로 item의 갯수와 계산하면서 정하면 좀더 명확한 정의가 가능*/
+  flex-basis: 55%;
+  /*align-self 하나의 아이템만 튀게 배치하고 싶다면 이렇게*/
+  align-self: center;
+}
+
+.item2 {
+  background: #f48fb1;
+  /* flex-grow:1; */
+  flex-basis: 5%;
+}
+
+.item3 {
+  background: #ce93d8;
+  flex-basis: 5%;
+}
+
+.item4 {
+  background: #b39ddb;
+      flex-basis: 5%;
+}
+
+.item5 {
+  background: #90caf9;
+      flex-basis: 5%;
+}
+
+.item6 {
+  background: #a5d6a7;
+      flex-basis: 5%;
+}
+.item7 {
+  background: #e6ee9c;
+      flex-basis: 5%;
+}
+
+.item8 {
+  background: #ffe46b;
+      flex-basis: 5%;
+}
+
+.item9 {
+  background: #c9ff94;
+  flex-basis: 5%;
+
+}
+
+.item10 {
+  background: #c2ceff;
+       flex-basis: 5%;
+
+}

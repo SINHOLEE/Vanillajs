@@ -1,0 +1,26 @@
+[
+    {
+        "name": "sinho",
+        "id": 1,
+        "password":"asd1",
+        "access": "admin"
+    },
+    {
+        "name": "sungmin",
+        "id": 2,
+        "password":"asd2",
+        "access": "admin"
+    },
+    {
+        "name": "minhee",
+        "id": 3,
+        "password":"asd3",
+        "access": "customer"
+    },
+    {
+        "name": "ks",
+        "id": 4,
+        "password":"asd4",
+        "access": "customer"
+    }
+]
