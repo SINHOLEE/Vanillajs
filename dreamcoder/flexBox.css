@@ -1,3 +1,8 @@
+/* 핵심키워드 2개
+container와 item 각각 컨트롤 할 수 있는 주체가 다르다.
+main axis와 cross aixs가 있다.
+*/
+
 .container {
   background: beige;
   height:100vh;
@@ -49,6 +54,7 @@
   이때 100%를 기준으로 item의 갯수와 계산하면서 정하면 좀더 명확한 정의가 가능*/
   flex-basis: 55%;
   /*align-self 하나의 아이템만 튀게 배치하고 싶다면 이렇게*/
+  /* https://flexboxfroggy.com/ */
   align-self: center;
 }
 
